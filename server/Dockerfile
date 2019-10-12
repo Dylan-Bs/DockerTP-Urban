@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="dylan.bersans@eisti.eu"
 # Updates and installation of some libraries
-RUN apt update && apt upgrade -y && apt install -y libxml2-utils
+RUN apt update && apt upgrade -y && apt install -y libxml2-utils curl
 # Creation of new user for more security
 RUN useradd -m urt
 # Login with the new user
